@@ -1,0 +1,294 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Remove Uppercase Accents\n"
+"POT-Creation-Date: 2020-08-27 16:11+0300\n"
+"PO-Revision-Date: 2020-08-25 01:24+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: remove-uppercase-accents.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/Options.class.php:32 remove-uppercase-accents.php:32
+msgid "Settings"
+msgstr ""
+
+#: admin/Options.class.php:38
+msgid "Plugin mode"
+msgstr ""
+
+#: admin/Options.class.php:50
+msgid "Selectors"
+msgstr ""
+
+#: admin/Options.class.php:62
+msgid "Places"
+msgstr ""
+
+#: admin/Options.class.php:77
+msgid "Instructions:"
+msgstr ""
+
+#: admin/Options.class.php:79
+msgid "Select the mode that best fits your case:"
+msgstr ""
+
+#: admin/Options.class.php:83
+msgid ""
+"The <strong>jQuery</strong> mode is the old version of the script, which is "
+"kept as default to avoid breaking existing installations. For better "
+"performance, you are encouraged to try any of the other options."
+msgstr ""
+
+#: admin/Options.class.php:87
+msgid ""
+"<strong>JavaScript</strong> mode is the same script, but with no jQuery "
+"dependency. Also, it allows you to target specific selectors."
+msgstr ""
+
+#: admin/Options.class.php:91
+msgid ""
+"<strong>PHP</strong> mode will not load any scripts at all and will do the "
+"replacement server-side. It should be faster that the previous options but "
+"can only be applied on specific parts of your website."
+msgstr ""
+
+#: admin/Options.class.php:95
+msgid ""
+"<strong>Manual</strong> mode is mostly for those who build their own themes "
+"or want to do things manually. It will practically deactivate all scripts "
+"and it will run no PHP filters. You will still have access to the "
+"<code>remove_greek_accents($text)</code> function, though, to apply the "
+"replacement on any string you want."
+msgstr ""
+
+#: admin/Options.class.php:100
+msgid "Tips"
+msgstr ""
+
+#: admin/Options.class.php:102
+msgid ""
+"Options are ordered from the easiest to implement to the most advanced. You "
+"can keep the defaults and forget it or you can try them all until you find "
+"the one which works best for you."
+msgstr ""
+
+#: admin/Options.class.php:104
+msgid ""
+"If the content that needs to be transformed is on one of the places "
+"supported by the <code>PHP</code> option, you should always prefer it, as it "
+"takes care of the transform on the server's side, skipping entirely the "
+"loading of scripts."
+msgstr ""
+
+#: admin/Options.class.php:106
+msgid ""
+"If that isn't the case and you use a ready-made theme where you don't want "
+"to mess with the child theme, you should choose the <code>JavaScript</code> "
+"option. If you know the selectors that you want to target, you are "
+"encouraged to do so, as this will highly improve the script's performance. "
+msgstr ""
+
+#: admin/Options.class.php:108
+msgid ""
+"If this option doesn't work for you or if you need to support legacy "
+"browsers, you can always switch it to the good old <code>jQuery</code>."
+msgstr ""
+
+#: admin/Options.class.php:110
+msgid ""
+"If you build a custom theme and you know your PHP, you should turn on the "
+"<code>Manual</code> mode and use the <code>remove_greek_accents($text)</"
+"code> function anywhere in your code."
+msgstr ""
+
+#: admin/Options.class.php:115
+msgid "FAQ"
+msgstr ""
+
+#: admin/Options.class.php:117
+msgid "Why would I need this plugin?"
+msgstr ""
+
+#: admin/Options.class.php:118
+msgid ""
+"For example, in greek there are accent marks that denote in which syllable "
+"you put the stress on when pronouncing a word. However, when words are "
+"written in all UPPERCASE, those accent marks are removed. This rule is not "
+"followed by the aforementioned CSS rules on some browsers, as they just use "
+"the corresponding uppercase unicode character."
+msgstr ""
+
+#: admin/Options.class.php:120
+msgid ""
+"I use \"text-transform:uppercase\" in greek text but I don't see any accents"
+msgstr ""
+
+#: admin/Options.class.php:122
+msgid ""
+"If you use Firefox or a Chromium-based browser like Chrome, the new Edge, "
+"Opera etc., <strong>and</strong> you have set the site language to Greek, "
+"accents should be handled correctly. The problem appears on Safari and on "
+"older browsers like the Internet Explorer and everywhere if you have a site "
+"with mixed content and you don't want to set Greek as the site's language."
+msgstr ""
+
+#: admin/Options.class.php:124
+msgid "I use Firefox/Chrome/the new Edge but the problem appears there too."
+msgstr ""
+
+#: admin/Options.class.php:126
+msgid ""
+"Then your site's language isn't set to Greek. If your content is in Greek, "
+"you should set it."
+msgstr ""
+
+#: admin/Options.class.php:128
+msgid "How does the \"Exclude\" option works on JavaScript mode?"
+msgstr ""
+
+#: admin/Options.class.php:130
+msgid ""
+"When you have <code>JavaScript</code> mode set and the <code>Exclude</code> "
+"option enabled, the script will scan the styles of the page and build a list "
+"of the selectors containing <code>text-transform:uppercase;</code>. Then, "
+"this list gets compared with the selectors that you manually entered, and if "
+"there are matches, they get removed from the initial list."
+msgstr ""
+
+#: admin/Options.class.php:132
+msgid ""
+"Therefore, in order for the <code>Exclude</code> option to work, you have to "
+"pass your selectors exactly as they appear on your CSS, for the matching to "
+"be successful (you can use your browser's developer tools to do so)."
+msgstr ""
+
+#: admin/Options.class.php:134
+msgid ""
+"<code>Include</code>, on the other hand, will use your selectors as is and "
+"will skip entirely the page scanning, which allows you to use any selector "
+"you like."
+msgstr ""
+
+#: admin/Options.class.php:139
+msgid "Support forum"
+msgstr ""
+
+#: admin/Options.class.php:141
+#, php-format
+msgid ""
+"Plugin created by <a href=\"%s\" target=\"_blank\">Giorgos Sarigiannidis</a>"
+msgstr ""
+
+#: admin/Options.class.php:159
+msgid "jQuery"
+msgstr ""
+
+#: admin/Options.class.php:164
+msgid "JavaScript"
+msgstr ""
+
+#: admin/Options.class.php:169
+msgid "PHP"
+msgstr ""
+
+#: admin/Options.class.php:174
+msgid "Manual"
+msgstr ""
+
+#: admin/Options.class.php:191
+msgid "Include"
+msgstr ""
+
+#: admin/Options.class.php:199
+msgid "Exclude"
+msgstr ""
+
+#: admin/Options.class.php:207
+msgid ""
+"You can use any CSS selector. Multiple selectors should be separated by "
+"comma. Example: <code>.selector-1 > h2, #selector-2, .selector-4 > div span</"
+"code>. Make sure that you copy the selectors exactly as they appear on your "
+"CSS (you can use your browser's developer tools to do so)."
+msgstr ""
+
+#: admin/Options.class.php:209
+msgid ""
+"Using it with the <code>Include</code> option enabled will target "
+"<strong>only</strong> the given selectors. <code>Exclude</code>, on the "
+"other hand, will target everything <strong>except</strong> from the given "
+"selectors. Leaving it empty will target everything, no matter which option "
+"you choose."
+msgstr ""
+
+#: admin/Options.class.php:222
+msgid "Select the parts of the website where the replacement should happen."
+msgstr ""
+
+#: admin/Options.class.php:229
+msgid "Menu (hooks to <code>wp_nav_menu_items()</code>)"
+msgstr ""
+
+#: admin/Options.class.php:236
+msgid "Title (hooks to <code>the_title()</code>)"
+msgstr ""
+
+#: admin/Options.class.php:243
+msgid "Excerpt (hooks to <code>the_excerpt()</code>)"
+msgstr ""
+
+#: admin/Options.class.php:251
+msgid "Widget title (hooks to <code>widget_title()</code>)"
+msgstr ""
+
+#: admin/Options.class.php:259
+msgid "Tags (hooks to <code>the_tags()</code>)"
+msgstr ""
+
+#: admin/Options.class.php:267
+msgid "Categories (hooks to <code>the_category()</code>)"
+msgstr ""
+
+#: admin/Options.class.php:274
+msgid "Content (hooks to <code>the_content()</code>)"
+msgstr ""
+
+#: admin/Options.class.php:306
+msgid "Save Settings"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Remove Uppercase Accents"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/plugins/remove-uppercase-accents/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A Wordpress plugin that automatically removes accented characters (currently "
+"greek) from elements having their text content uppercase transformed through "
+"CSS (with \"text-transform: uppercase;\"). Currently the script transforms "
+"only greek text, but it can be easily extended to support other languages."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Giorgos Sarigiannidis"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.gsarigiannidis.gr/"
+msgstr ""
