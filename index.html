@@ -26,17 +26,57 @@
 
         </div>
         <div class="flex items-center justify-center mt-5 text-gray-700 text-xl tracking-wide mr-5">
-            <button id="projects-button" class="px-10 flex py-05 rounded-full border hover:bg-gray-100 focus:outline-none focus:ring focus:ring-gray-300"> PROJECTS </button>
+<!--            <button id="projects-button" class="px-10 flex py-05 rounded-full border hover:bg-gray-200 focus:outline-none focus:ring focus:ring-gray-200 mx-4"> PROJECTS </button>-->
+<!--            <button id="experience-button" class="px-10 flex py-05 rounded-full border hover:bg-gray-200 focus:outline-none focus:ring focus:ring-gray-200 mx-4"> EXPERIENCE </button>-->
         </div>
     </div>
 </div>
 
-<div id="projects-section" class="flex justify-center">
+<!-- Experience Section -->
+<div id="experience-section" class="hidden content-section flex justify-center">
     <div class="text-gray-900 tracking-wide items-center">
-        <div class="mt-10 flex justify-center"><img src="https://static.thenounproject.com/png/215093-200.png" class="w-100 h-100"></div>
-        <div class="mt-10 flex justify-center">Under Construction</div>
+        <div class="experience-table">
+            <div class="experience-title-column">
+                <div class="experience-title">Experience 1</div>
+                <div class="experience-keywords">Keyword1<span class="px-2">·</span>Keyword2</div>
+                <div class="experience-calltoaction"><a href="#" class="text-blue-500 hover:text-blue-700">Details</a></div>
+            </div>
+            <div class="experience-description-column">
+                <div class="experience-description">This is a description of Experience 1. It provides an overview of the experience's purpose and key features.</div>
+            </div>
+        </div>
     </div>
 </div>
+
+<!-- Project Section -->
+<div id="projects-section" class="hidden flex content-section justify-center">
+    <div class="text-gray-900 tracking-wide items-center">
+<!--        <div class="mt-10 flex justify-center"><img src="https://static.thenounproject.com/png/215093-200.png" class="w-100 h-100"></div>-->
+<!--        <div class="mt-10 flex justify-center">Under Construction</div>-->
+    <div class="project-table">
+        <div class="project-title-column">
+            <div class="project-title">Thesis Project: Task Management App</div>
+            <div class="project-keywords">Low Code<span class="px-2">·</span>Mendix </div>
+            <div class="project-calltoaction"><a href="https://unitask-sandbox.mxapps.io/login.html" class="text-blue-500 hover:text-blue-700">Live Demo</a></div>
+        </div>
+        <div class="project-description-column">
+            <div class="project-description">This is a description of Project 1. It provides an overview of the project's purpose and key features.</div>
+        </div>
+    </div>
+    <div class="project-table">
+        <div class="project-title-column">
+            <div class="project-title">Web Development Project</div>
+            <div class="project-keywords">JavaScript<span class="px-2">·</span>PHP<span class="px-2">·</span>JQuery<span class="px-2">·</span>Tailwind CSS<span class="px-2">·</span>SQL</div>
+            <div class="project-calltoaction"><a href="" class="text-blue-500 hover:text-blue-700">Report</a><span class="px-2">·</span><a href="" class="text-blue-500 hover:text-blue-700">Source Code</a></div>
+        </div>
+        <div class="project-description-column">
+            <div class="project-description">This is a description of Project 2. It provides an overview of the project's purpose and key features.</div>
+        </div>
+    </div>
+
+    </div>
+</div>
+
 
 <!-- Phone Version -->
 <div id="home-sm" class="md:hidden flex items-center justify-center min-h-screen mx-20">

@@ -28,10 +28,11 @@
     transition: top 0.5s ease-in-out;
 }
 
-#projects-section {
+.content-section {
     margin-top: 15rem;
     margin-right: 1em;
 }
+
 
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -42,4 +43,93 @@
     #projects-section {
         display: none;
     }
+}
+
+.small-caps{
+    font-variant: small-caps;
+}
+
+/* Project Table */
+.project-table {
+    display: flex; /* flex */
+    width: 100%; /* w-full */
+    max-width: 72rem; /* 6xl */
+    padding: 1rem; /* p-4 */
+    border-bottom: 1px solid #e5e7eb; /* border-gray-200 */
+}
+
+.project-title-column {
+    width: 33.333333%; /* w-4/12 */
+}
+
+.project-title {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 700; /* font-bold */
+    margin-bottom: 0.25rem; /* mb-1 */
+    color: #1f2937; /* text-gray-800 */
+}
+
+.project-keywords {
+    font-size: 0.875rem; /* text-sm */
+    color: #4b5563; /* text-gray-600 */
+    font-variant: small-caps; /* small-caps */
+    margin-bottom: 0.25rem; /* mb-1 */
+}
+
+.project-calltoaction {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 600; /* font-semibold */
+}
+
+.project-description-column {
+    width: 66.666667%; /* w-8/12 */
+    padding-left: 1.25rem; /* pl-5 */
+}
+
+.project-description {
+    color: #1f2937; /* text-gray-800 */
+}
+
+
+
+
+/* Experience Table */
+.experience-table {
+    display: flex; /* flex */
+    width: 100%; /* w-full */
+    max-width: 72rem; /* 6xl */
+    padding: 1rem; /* p-4 */
+    border-bottom: 1px solid #e5e7eb; /* border-gray-200 */
+}
+
+.experience-title-column {
+    width: 33.333333%; /* w-4/12 */
+}
+
+.experience-title {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 700; /* font-bold */
+    margin-bottom: 0.25rem; /* mb-1 */
+    color: #1f2937; /* text-gray-800 */
+}
+
+.experience-keywords {
+    font-size: 0.875rem; /* text-sm */
+    color: #4b5563; /* text-gray-600 */
+    font-variant: small-caps; /* small-caps */
+    margin-bottom: 0.25rem; /* mb-1 */
+}
+
+.experience-calltoaction {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 600; /* font-semibold */
+}
+
+.experience-description-column {
+    width: 66.666667%; /* w-8/12 */
+    padding-left: 1.25rem; /* pl-5 */
+}
+
+.experience-description {
+    color: #1f2937; /* text-gray-800 */
 }
