@@ -6,6 +6,7 @@
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
+
 .fade-in-active {
     opacity: 1;
 }
@@ -19,22 +20,26 @@
     min-height: auto;
     padding: 1rem 0;
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     transition: top 0.5s ease-in-out;
 }
+
 #main-content-md {
     transition: top 0.5s ease-in-out;
 }
+
 #projects-section {
-    animation: fadeIn 0.5s ease-in-out;
-    margin-top: 12rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 15rem;
+    margin-right: 1em;
 }
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    #projects-section {
+        display: none;
+    }
 }
