@@ -2,57 +2,38 @@
 <html lang="el">
 
 <head>
-    <title>Alexandros Xiarchos</title>
+    <title>Alexandros Xiarchos - Home</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-
-    <style>
-        .font-sourcesans {
-            font-family: 'Source Sans 3', sans-serif;
-        }
-        .fade-in {
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-        .fade-in-active {
-            opacity: 1;
-        }
-    </style>
-    
-    <script>
-        window.onload = () => {
-            setTimeout(() => {
-                document.getElementById('main-content').classList.add('fade-in-active');
-            }, 0);
-        }
-    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/home.js"></script>
 </head>
 
+<body id="home" class="bg-white subpixel-antialized fade-in">
+<div id="main-content-md" class="hidden md:flex items-center justify-center min-h-screen">
+    <div class="font-sourcesans">
+        <div id="name-md" class="text-8xl font-thin text-gray-700 mb-2 whitespace-nowrap">Alexandros <span class="font-semibold text-gray-900 pl-2">Xiarchos</span></div>
+        <div id="social-md" class="flex items-center justify-center text-gray-800 text-xl tracking-wide">
+            <img src="img/icons/mail.png" class="w-6 h-5 mr-2"> <a href="mailto:alex@xiarxos.gr">alex@xiarxos.gr</a> <span class="mx-8 font-black">|</span>
+            <img src="img/icons/github.png" class="w-5 h-5 mr-2"> <a href="https://github.com/alex-xiarchos">alex-xiarchos</a> <span class="mx-8 font-black">|</span>
+            <img src="img/icons/linkedin.png" class="w-5 h-5 mr-2"> <a href="https://www.linkedin.com/in/alex-xiarchos/">alex-xiarchos</a>
+        </div>
+    </div>
+</div>
+<div id="home-sm" class="md:hidden flex items-center justify-center min-h-screen mx-20">
+    <div class="font-sourcesans">
+        <div id="name-sm" class="text-right text-7xl font-thin text-gray-700 mb-6">Alexandros <br> <span class="font-semibold text-gray-900">Xiarchos</span></div>
+        <div id="social-sm" class="block items-center justify-center text-gray-800 text-xl tracking-normal space-y-1">
+            <div class="flex justify-end"><img src="img/icons/mail.png" class="w-6 h-5 mr-2"> <a href="mailto:alex@xiarxos.gr">alex@xiarxos.gr</a></div>
+            <div class="flex justify-end"><img src="img/icons/github.png" class="w-6 h-6 mr-2"> <a href="https://github.com/alex-xiarchos">alex-xiarchos</a></div>
+            <div class="flex justify-end"><img src="img/icons/linkedin.png" class="w-6 h-6 mr-2"> <a href="https://www.linkedin.com/in/alex-xiarchos/">alex-xiarchos</a></div>
+        </div>
+    </div>
+</div>
 
-<body id="main-content" class="bg-white subpixel-antialized fade-in">
-    <div id="main-content-md" class="hidden md:flex items-center justify-center min-h-screen">
-        <div class="font-sourcesans">
-            <div id="name" class="text-8xl font-thin text-gray-700 mb-2 whitespace-nowrap">Alexandros <span class="font-semibold text-gray-900 pl-2">Xiarchos</div> 
-                <div id="social" class="flex items-center justify-center text-gray-800 text-xl tracking-wide">
-                    <img src="icons/mail.png" class="w-6 h-5 mr-2"> <a href="mailto:alex@xiarxos.gr">alex@xiarxos.gr</a> <span class="mx-8 font-black">|</span>
-                    <img src="icons/github.png" class="w-5 h-5 mr-2"> <a href="https://github.com/alex-xiarchos">alex-xiarchos</a> <span class="mx-8 font-black">|</span>
-                    <img src="icons/linkedin.png" class="w-5 h-5 mr-2"> <a href="https://www.linkedin.com/in/alex-xiarchos/">alex-xiarchos</a>
-                </div>
-        </div>
-    </div>
-    <div id="main-content-sm" class="md:hidden flex items-center justify-center min-h-screen mx-20">
-        <div class="font-sourcesans">
-            <div id="name" class="text-right text-7xl font-thin text-gray-700 mb-6">Alexandros <br> <span class="font-semibold text-gray-900">Xiarchos</div> 
-                <div id="social" class="block items-center justify-center text-gray-800 text-xl tracking-normal space-y-1">
-                    <div class="flex justify-end"><img src="icons/mail.png" class="w-6 h-5 mr-2"> <a href="mailto:alex@xiarxos.gr">alex@xiarxos.gr</a></div>
-                    <div class="flex justify-end"><img src="icons/github.png" class="w-6 h-6 mr-2"> <a href="https://github.com/alex-xiarchos">alex-xiarchos</a></div>
-                    <div class="flex justify-end"><img src="icons/linkedin.png" class="w-6 h-6 mr-2"> <a href="https://www.linkedin.com/in/alex-xiarchos/">alex-xiarchos</a></div>
-                </div>
-        </div>
-    </div>
-    </body>
+</body>
 </html>

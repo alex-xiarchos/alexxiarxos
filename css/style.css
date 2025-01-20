@@ -1,0 +1,19 @@
+html, body {
+    overflow: hidden
+}
+
+.font-sourcesans {
+    font-family: 'Source Sans 3', sans-serif;
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.fade-in-active {
+    opacity: 1;
+}
+
+/*.move-up {*/
+/*    transform: translateY(-42%);*/
+/*    transition: transform 1s ease-in-out;*/
+/*}*/
