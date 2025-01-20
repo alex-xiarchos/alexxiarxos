@@ -1,10 +1,7 @@
-html, body {
-    overflow: hidden
-}
-
 .font-sourcesans {
     font-family: 'Source Sans 3', sans-serif;
 }
+
 .fade-in {
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -13,7 +10,31 @@ html, body {
     opacity: 1;
 }
 
-/*.move-up {*/
-/*    transform: translateY(-42%);*/
-/*    transition: transform 1s ease-in-out;*/
-/*}*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    min-height: auto;
+    padding: 1rem 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: top 0.5s ease-in-out;
+}
+#main-content-md {
+    transition: top 0.5s ease-in-out;
+}
+#projects-section {
+    animation: fadeIn 0.5s ease-in-out;
+    margin-top: 12rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
