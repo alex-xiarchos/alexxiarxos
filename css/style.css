@@ -41,6 +41,14 @@ html {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+.footer{
+    position: fixed;
+    justify-content: center;
+    background-color: white;
+    padding: 5px 0;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+}
+
 .content-section {
     margin-top: 15rem;
 }
