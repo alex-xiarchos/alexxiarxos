@@ -22,7 +22,11 @@ html {
 
 .fade-in-delayed {
     opacity: 0;
-    animation: fadeIn 1s ease-in-out 0.5s forwards;
+    animation: fadeIn 1s ease-in-out 0.25s forwards;
+}
+
+.small-caps{
+    font-variant: small-caps;
 }
 
 .header {
@@ -41,24 +45,19 @@ html {
     margin-top: 15rem;
 }
 
-p {
-    margin-bottom: 1rem;
-}
-
-
 @media (max-width: 768px) {
     #projects-section {
         display: none;
     }
 }
 
-.small-caps{
-    font-variant: small-caps;
-}
-
 ul {
     list-style-type: square;
-    padding-left: 1.5rem; /* Adjust padding as needed */
+    padding-left: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
 }
 
 ul li::marker {
