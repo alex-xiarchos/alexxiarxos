@@ -1,5 +1,14 @@
+html {
+    overflow-y: scroll;
+}
+
 .font-sourcesans {
     font-family: 'Source Sans 3', sans-serif;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .fade-in {
@@ -9,6 +18,11 @@
 
 .fade-in-active {
     opacity: 1;
+}
+
+.fade-in-delayed {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 0.5s forwards;
 }
 
 .header {
@@ -21,23 +35,16 @@
     padding: 1rem 0;
     background-color: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    transition: top 0.5s ease-in-out;
-}
-
-#main-content-md {
-    transition: top 0.5s ease-in-out;
 }
 
 .content-section {
     margin-top: 15rem;
-    margin-right: 1em;
 }
 
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+p {
+    margin-bottom: 1rem;
 }
+
 
 @media (max-width: 768px) {
     #projects-section {
@@ -48,6 +55,24 @@
 .small-caps{
     font-variant: small-caps;
 }
+
+ul {
+    list-style-type: square;
+    padding-left: 1.5rem; /* Adjust padding as needed */
+}
+
+ul li::marker {
+    color: #1f2937; /* text-gray-800 */
+}
+
+.link {
+    color: #3b82f6; /* Tailwind's blue-500 color */
+}
+
+.link:hover {
+    color: #1d4ed8; /* Tailwind's blue-700 color */
+}
+
 
 /* Project Table */
 .project-table {
@@ -79,6 +104,14 @@
 .project-calltoaction {
     font-size: 0.875rem; /* text-sm */
     font-weight: 600; /* font-semibold */
+    margin-bottom: 0.25rem; /* mb-1 */
+}
+
+.project-grade {
+    font-size: 0.875rem; /* text-sm */
+    font-variant: small-caps; /* small-caps */
+    color: #4b5563; /* text-gray-600 */
+    font-weight: 600; /* font-semibold */
 }
 
 .project-description-column {
@@ -89,8 +122,6 @@
 .project-description {
     color: #1f2937; /* text-gray-800 */
 }
-
-
 
 
 /* Experience Table */
@@ -109,20 +140,20 @@
 .experience-title {
     font-size: 1.25rem; /* text-xl */
     font-weight: 700; /* font-bold */
-    margin-bottom: 0.25rem; /* mb-1 */
     color: #1f2937; /* text-gray-800 */
 }
 
-.experience-keywords {
-    font-size: 0.875rem; /* text-sm */
-    color: #4b5563; /* text-gray-600 */
-    font-variant: small-caps; /* small-caps */
-    margin-bottom: 0.25rem; /* mb-1 */
+.experience-subtitle {
+    font-size: 1rem; /* text-xl */
+    font-weight: 500; /* font-bold */
+    margin-bottom: 0.5rem; /* mb-1 */
+    color: #1f2937; /* text-gray-800 */
 }
 
-.experience-calltoaction {
+.experience-subsubtitle {
     font-size: 0.875rem; /* text-sm */
-    font-weight: 600; /* font-semibold */
+    color: #4b5563; /* text-gray-600 */
+    margin-bottom: 0.25rem; /* mb-1 */
 }
 
 .experience-description-column {
@@ -131,5 +162,5 @@
 }
 
 .experience-description {
-    color: #1f2937; /* text-gray-800 */
+    color: #52525BFF; /* text-gray-600 */
 }
