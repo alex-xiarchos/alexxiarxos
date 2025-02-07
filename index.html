@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="el">
+<html lang="en">
 
 <head>
     <meta charset="utf-8"/>
@@ -20,7 +20,7 @@
 <!-- Desktop Version -->
 <div id="main-content-md" class="hidden md:flex items-center justify-center min-h-screen">
     <div>
-        <div id="name-md" class="text-8xl font-thin text-gray-700 whitespace-nowrap">Alexandros <span class="font-semibold text-gray-900 pl-2">Xiarchos</span></div>
+        <div id="name-md" class="text-8xl font-thin text-gray-700 whitespace-nowrap">Alexandros <span class="font-semibold text-gray-900">Xiarchos</span></div>
         <div id="social-md" class="flex items-center justify-center text-gray-800 text-xl tracking-wide">
             <img src="img/icons/github.png" class="w-5 h-5 mr-3"> <a href="https://github.com/alex-xiarchos" target="_blank">alex-xiarchos</a> <span class="mx-8 font-black text-gray-600">|</span>
             <img src="img/icons/linkedin.png" class="w-5 h-5 mr-3"> <a href="https://www.linkedin.com/in/alex-xiarchos/" target="_blank">alex-xiarchos</a> <span class="mx-8 font-black text-gray-600">|</span>
@@ -45,10 +45,8 @@
             </div>
             <div class="experience-description-column">
                 <div class="experience-description">
-                    <ul>
-                        <li>Resolved legacy PHP errors on a WordPress site caused by previous development issues.</li>
-                        <li>Provided on-demand technical support, addressing and fixing issues as they arose to maintain site functionality. </li>
-                    </ul>
+                    <p>Resolved legacy PHP errors on a WordPress site caused by previous development issues.</p>
+                    <p>Provided on-demand technical support, addressing and fixing issues as they arose to maintain site functionality. </p>
                 </div>
             </div>
         </div>
@@ -60,10 +58,8 @@
             </div>
             <div class="experience-description-column">
                 <div class="experience-description">
-                    <ul>
-                        <li>Responsible for teaching students the lab equipment’s proper use and examining their exercises. </li>
-                        <li>Troubleshoot problems that may occur & evaluated their work with constant communication with professors to ensure the lab’s functionality. </li>
-                    </ul>
+                    <p>Responsible for teaching students the lab equipment’s proper use and examining their exercises. </p>
+                    <p>Troubleshoot problems that may occur & evaluated their work with constant communication with professors to ensure the lab’s functionality. </p>
                 </div>
             </div>
         </div>
@@ -75,11 +71,8 @@
             </div>
             <div class="experience-description-column">
                 <div class="experience-description">
-                    <ul>
-                        <li>Proactively sought innovative approaches to enhance content quality, ensuring originality and staying ahead of industry trends. </li>
-                        <li>Leveraged software engineering expertise to develop custom scripts and automate workflows for efficient video editing, managing the content direction of over 500 projects, some of them sponsored by industry giants (e.g. Vodafone, Adidas, VISA & LG). </li>
-                        <li>Established trusted relationships with some of Greece's most popular content creators, becoming their go-to video editor by consistently delivering reliable results and independently resolving challenges. </li>
-                    </ul>
+                    <p>Used software engineering expertise to design custom scripts that automated video editing workflows, managing content direction for over 500 projects, including sponsorships from brands like Vodafone, Adidas, VISA, and LG.</p>
+                    <p>Built trusted partnerships with Greece’s top content creators by consistently delivering high-performing videos, leveraging analytical insights to ensure reliable results and independently solving complex challenges.</p>
                 </div>
             </div>
         </div>
@@ -101,17 +94,25 @@
                 <div class="project-calltoaction"><a href="" class="link" target="_blank">Report</a><span class="px-2">·</span><a href="" class="link" target="_blank">Source Code</a></div>
             </div>
             <div class="project-description-column">
-                <div class="project-description">This is a description of Project. It provides an overview of the project's purpose and key features. </div></div>
+                <div class="project-description">
+                    <p>Data mining and machine learning system to classify and cluster human activity data. The dataset consists of sensor readings from wearable devices, containing motion data across different activities such as walking, running, cycling, and standing. The data <span class="sbf">preprocessing</span> pipeline uses Pandas and NumPy for handling missing values, normalizing sensor readings, and structuring the dataset for analysis. Matplotlib and Seaborn are used for visualizing patterns and correlations through heatmaps, boxplots, and time-series graphs. </p>
+                    <p>For <span class="sbf">classification</span>, three machine learning models were implemented using Scikit-learn: <span class="sbf">Neural Networks (MLP) </span>, <span class="sbf">Random Forest</span>, and <span class="sbf">Bayesian Networks</span>. The models were trained and evaluated using accuracy, precision, recall, and F1-score metrics. Random Forest achieved the highest accuracy but showed signs of overfitting, while Neural Networks provided the best balance between training and testing performance. </p>
+                    <p>For <span class="sbf">clustering</span>, <span class="sbf">K-Means</span> and <span class="sbf">DBSCAN</span> were implemented to group activity patterns. K-Means effectively separated activity groups, whereas DBSCAN struggled with high-dimensional data.</p>
+                </div>
+            </div>
         </div>
         <div class="project-table">
             <div class="project-title-column">
                 <div class="project-title">Information Retrieval Project</div>
-                <div class="project-keywords">Keyword1<span class="px-2">·</span>Keyword2</div>
+                <div class="project-keywords">Python<span class="px-2">·</span>NumPy<span class="px-2">·</span></div>
                 <div class="project-calltoaction"><a href="" class="link" target="_blank">Report</a><span
                         class="px-2">·</span><a href="" class="link" target="_blank">Source Code</a></div>
             </div>
             <div class="project-description-column">
-                <div class="project-description">This is a description of Project. It provides an overview of the project's purpose and key features. </div>
+                <div class="project-description">
+                    <p>Information Retrieval system built using Python, designed to process and rank text documents efficiently. The implementation includes a <span class="sbf">Vector Space Model</span> (VSM) with <span class="sbf">TF-IDF</span> weighting and a deep-learning-based retrieval model (<span class="sbf">ColBERT</span>). The system performs document preprocessing, inverted indexing, and query ranking to retrieve the most relevant results.</p>
+                    <p>The <span class="sbf">preprocessing</span> pipeline removes stopwords, applies stemming, and tokenizes text using NLTK. An <span class="sbf">inverted index</span> is created to optimize search queries, mapping terms to document occurrences for fast retrieval. The VSM model calculates TF-IDF weights using two different weighting schemes and ranks documents based on <span class="sbf">cosine similarity</span>. The ColBERT model is integrated using <span class="sbf">Google Colab</span>, leveraging a pretrained transformer-based architecture for contextualized ranking.</p>
+                </div>
             </div>
         </div>
         <div class="project-table">
@@ -122,7 +123,12 @@
                         class="px-2">·</span><a href="" class="link" target="_blank">Source Code</a></div>
             </div>
             <div class="project-description-column">
-                <div class="project-description">This is a description of Project. It provides an overview of the project's purpose and key features. </div>
+                <div class="project-description">
+                    <p>Data structures system to efficiently store, query, and compare data points in a multi-dimensional space. A <span class="sbf">custom dataset</span> of computer scientists was built by scraping Wikipedia with <span class="sbf">BeautifulSoup</span> and storing structured information in a CSV format.</p>
+                    <p>To enable efficient spatial searching, four advanced data structures were implemented: <span class="sbf">Range Tree</span>, <span class="sbf">K-D Tree</span>, <span class="sbf">R-Tree</span>, and <span class="sbf">Quad Tree</span>. Each structure handles multi-dimensional queries, allowing fast range searches based on scientists' names, awards, and education background. The Range Tree and K-D Tree utilize balanced binary search trees (BBSTs), the R-Tree employs bounding boxes for spatial indexing, and the Quad Tree recursively divides the space for hierarchical searching.</p>
+                    <p>Additionally, the project includes an approximate similarity search algorithm using <span class="sbf">Locality-Sensitive Hashing (LSH)</span>. The LSH model applies MinHashing techniques to efficiently compare educational backgrounds, using Jaccard similarity and One-Hot Encoding to represent textual information. The text preprocessing pipeline integrates tokenization, stopword removal, stemming, and regex parsing to clean and structure data.</p>
+                    <p>Benchmarking showed K-D Tree and Range Tree had the fastest queries, R-Tree handled irregular data well, and Quad Tree was slower due to recursion.</p>
+                </div>
             </div>
         </div>
         <div class="project-table">
@@ -133,10 +139,8 @@
             </div>
             <div class="project-description-column">
                 <div class="project-description">
-                    <ul>
-                        <li> UniTask is a task management application built with the Mendix low-code platform. It uses domain models to organize data, like tasks, users, and their relationships. The application’s functionality relies on microflows, which define how actions like creating tasks or updating task statuses happen. </li>
-                        <li> The user interface was created using Mendix’s tools for layout and styling, ensuring the design is responsive and consistent. Gamified elements, like confetti effects for completing tasks, are included to make the experience more engaging. </li>
-                    </ul>
+                    <p> UniTask is a task management application built with the Mendix low-code platform. It uses domain models to organize data, like tasks, users, and their relationships. The application’s functionality relies on microflows, which define how actions like creating tasks or updating task statuses happen. </p>
+                    <p> The user interface was created using Mendix’s tools for layout and styling, ensuring the design is responsive and consistent. Gamified elements, like confetti effects for completing tasks, are included to make the experience more engaging. </p>
                 </div>
             </div>
         </div>
@@ -150,11 +154,8 @@
             </div>
             <div class="project-description-column">
                 <div class="project-description">
-                    <ul>
-                        <li>Developed a web‑based disaster management platform enabling citizens to request or offer essential items, with rescuers coordinating pickups and deliveries to and from a central base. </li>
-                        <li>Developed using JavaScript, PHP, jQuery and AJAX for server‑side interactions, with front‑end enhancements utilizing Leaflet for interactive maps, Tailwind CSS for responsive design, sweetalert2 for user popup notifications, and Chart.js for statistic data visualization.
-                        </li>
-                    </ul>
+                    <p>Developed a web‑based disaster management platform enabling citizens to request or offer essential items, with rescuers coordinating pickups and deliveries to and from a central base. </p>
+                    <p>Developed using JavaScript, PHP, jQuery and AJAX for server‑side interactions, with front‑end enhancements utilizing Leaflet for interactive maps, Tailwind CSS for responsive design, sweetalert2 for user popup notifications, and Chart.js for statistic data visualization.</p>
                 </div>
             </div>
         </div>
