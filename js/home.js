@@ -22,6 +22,12 @@ window.onload = () => {
         }
     });
 
+    document.addEventListener('DOMContentLoaded', function() {
+        if (window.location.hash === '#projects') {
+            document.getElementById('projects-section').classList.remove('hidden');
+        }
+    });
+
     document.getElementById('experience-button').addEventListener('click', function() {
         const mainContent = document.getElementById('main-content-md');
         const projectsSection = document.getElementById('projects-section');
