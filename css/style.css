@@ -92,6 +92,36 @@ ul li::marker {
     font-weight: 700; /* font-bold */
 }
 
+.carousel {
+    margin-top: 1rem;
+    max-width: 90%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-images {
+    display: flex;
+    animation: slide 15s infinite ease;
+}
+
+.carousel-images img {
+    object-fit: cover;
+
+    /* Force smoother rendering */
+    transform: translateZ(0); /* Hardware acceleration */
+    image-rendering: high-quality; /* Works in some browsers */
+    filter: blur(0.001px); /* Triggers better rendering in some browsers */
+}
+
+
+@keyframes slide {
+    0%, 20% { transform: translateX(0); }  /* Pause at Image 1 */
+    30%, 50% { transform: translateX(-100%); } /* Pause at Image 2 */
+    60%, 80% { transform: translateX(-200%); } /* Pause at Image 3 */
+    90%, 100% { transform: translateX(0); } /* Back to Image 1 */
+}
+
 
 /* Project Table */
 .project-table {
@@ -116,7 +146,7 @@ ul li::marker {
 .project-keywords {
     font-size: 0.875rem; /* text-sm */
     color: #4b5563; /* text-gray-600 */
-    font-variant: small-caps; /* small-caps */
+    /*font-variant: small-caps; !* small-caps *!*/
     margin-bottom: 0.25rem; /* mb-1 */
 }
 
