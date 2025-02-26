@@ -89,14 +89,15 @@
             <div class="project-title-column">
                 <div class="project-title">Data Mining Project</div>
                 <div class="project-keywords">Python<span class="px-2">·</span>pandas<span class="px-2">·</span>Matplotlib<span class="px-2">·</span>KMeans<span class="px-2">·</span>Neural Networks<span class="px-2"></div>
-                <div class="project-calltoaction"><a href="" class="link" target="_blank">Report</a><span class="px-2">·</span><a href="" class="link" target="_blank">Source Code</a></div>
+                <div class="project-calltoaction"><a href="files/Project_DataMining_Report.pdf" class="link" target="_blank">Report</a><span class="px-2">·</span><a href="https://github.com/alex-xiarchos/ceid-DataMining" class="link" target="_blank">Source Code</a></div>
+                <div class="mt-3 text-gray-700">
+                    <a href="projects/DataMining"><button class="sbf px-7 flex py-05 border-b-2 border-gray-200 hover:border-gray-400 focus:border-gray-600"> Read More </button></a>
+                </div>
             </div>
             <div class="project-description-column">
                 <div class="project-description">
-                    <p>A data mining and machine learning system for classifying and clustering human activity data from wearable sensors. The preprocessing pipeline, built with Pandas and NumPy, handles missing values, normalizes sensor readings, and structures data for analysis. Visualization is done using Matplotlib and Seaborn.</p>
-                    <p>For classification, Scikit-learn models —Neural Networks (MLP), Random Forest, and Bayesian Networks— were evaluated using accuracy, precision, recall, and F1-score. Random Forest achieved the highest accuracy but showed overfitting, while Neural Networks offered the best balance.</p>
-                    <p>For clustering, K-Means effectively grouped activities, whereas DBSCAN struggled with high-dimensional data.</p>
-
+                    <p>A machine learning system utilizing classification and clustering to analyze human activity data from wearable sensors.</p>
+                    <p>Classification models (MLP, Random Forest, Bayesian Networks) and clustering algorithms (K-Means, DBSCAN) were applied after data preprocessing and visualization.</p>
                 </div>
             </div>
         </div>
@@ -104,13 +105,16 @@
             <div class="project-title-column">
                 <div class="project-title">Information Retrieval Project</div>
                 <div class="project-keywords">Python<span class="px-2">·</span>NumPy<span class="px-2">·</span>Matplotlib<span class="px-2">·</span>VSM<span class="px-2">·</span>ColBERT</div>
-                <div class="project-calltoaction"><a href="" class="link" target="_blank">Report</a><span
-                        class="px-2">·</span><a href="" class="link" target="_blank">Source Code</a></div>
+                <div class="project-calltoaction"><a href="../../files/Project_InfoRetrieval_Report.pdf" class="link" target="_blank">Report</a><span
+                        class="px-2">·</span><a href="https://github.com/alex-xiarchos/ceid-InfoRetrival" class="link" target="_blank">Source Code</a></div>
+                <div class="mt-3 text-gray-700">
+                    <a href="projects/InfoRetrieval"><button class="sbf px-7 flex py-05 border-b-2 border-gray-200 hover:border-gray-400 focus:border-gray-600"> Read More </button></a>
+                </div>
             </div>
             <div class="project-description-column">
                 <div class="project-description">
-                    <p>An Information Retrieval system built in Python to efficiently process and rank text documents. It implements a Vector Space Model (VSM) with TF-IDF weighting and a deep-learning-based retrieval model (ColBERT). The system performs document preprocessing, inverted indexing, and query ranking to retrieve relevant results.</p>
-                    <p>The preprocessing pipeline removes stopwords, applies stemming, and tokenizes text using NLTK. An inverted index maps terms to document occurrences for fast retrieval. The VSM model computes TF-IDF weights with two schemes and ranks documents based on cosine similarity. The ColBERT model, integrated via Google Colab, leverages a pretrained transformer-based architecture for contextualized ranking.</p>
+                    <p>An Information Retrieval system utilizing both traditional and deep-learning-based models to process and rank text documents.</p>
+                    <p>It implements a Vector Space Model with TF-IDF weighting and a deep-learning retrieval model (ColBERT), along with preprocessing, inverted indexing, and query ranking.</p>
                 </div>
             </div>
         </div>
@@ -118,16 +122,17 @@
             <div class="project-title-column">
                 <div class="project-title">Multi-dimensional Data Structures Project</div>
                 <div class="project-keywords">Python<span class="px-2">·</span>LSH<span class="px-2">·</span>pandas<span class="px-2">·</span>NumPy</div>
-                <div class="project-calltoaction"><a href="" class="link" target="_blank">Report</a><span
-                        class="px-2">·</span><a href="" class="link" target="_blank">Source Code</a></div>
+                <div class="project-calltoaction"><a href="files/Project_MultiDimStructures_Report.pdf" class="link" target="_blank">Report</a><span
+                        class="px-2">·</span><a href="https://github.com/alex-xiarchos/ceid-MultidimensionalDataStructures" class="link" target="_blank">Source Code</a></div>
+                <div class="mt-3 text-gray-700">
+                    <a href="projects/MultiDimStructures"><button class="sbf px-7 flex py-05 border-b-2 border-gray-200 hover:border-gray-400 focus:border-gray-600"> Read More </button></a>
+                </div>
             </div>
             <div class="project-description-column">
                 <div class="project-description">
-                    <p>A data structures system designed to efficiently store, query, and compare data points in a multi-dimensional space. A custom dataset of computer scientists was built by scraping Wikipedia with BeautifulSoup and storing structured data in CSV format.</p>
-                    <p>To enable efficient spatial searching, four advanced data structures were implemented: Range Tree, K-D Tree, R-Tree, and Quad Tree. Each supports multi-dimensional queries for fast range searches based on scientists' names, awards, and education. The Range Tree and K-D Tree use balanced binary search trees (BBSTs), the R-Tree employs bounding boxes for spatial indexing, and the Quad Tree recursively divides space for hierarchical searching.</p>
-                    <p>An approximate similarity search algorithm using Locality-Sensitive Hashing (LSH) was also implemented. The LSH model applies MinHashing to compare educational backgrounds efficiently, using Jaccard similarity and One-Hot Encoding. The text preprocessing pipeline integrates tokenization, stopword removal, stemming, and regex parsing.</p>
-                    <p>Benchmarking showed K-D Tree and Range Tree had the fastest queries, R-Tree handled irregular data well, and Quad Tree was slower due to recursion.</p>
-
+                    <p>A data structures system for efficiently storing, querying, and comparing multi-dimensional data.</p>
+                    <p>It implements Range Tree, K-D Tree, R-Tree, and Quad Tree for spatial searching, along with Locality-Sensitive Hashing (LSH) for approximate similarity search.</p>
+                    <p>Data was scraped from Wikipedia, structured in CSV format, and processed with text preprocessing techniques.</p>
                 </div>
             </div>
         </div>
@@ -135,17 +140,18 @@
             <div class="project-title-column">
                 <div class="project-title">Thesis: Task Management App</div>
                 <div class="project-keywords">Low Code<span class="px-2">·</span>Mendix</div>
-                <div class="project-calltoaction"><a href="https://unitask-sandbox.mxapps.io/login.html" class="link" target="_blank">Live Demo</a><span class="px-2">·</span><a href="files/ThesisMendix.pdf" class="link" target="_blank">Thesis</a> </div>
+                <div class="project-calltoaction"><a href="https://unitask-sandbox.mxapps.io/login.html" class="link" target="_blank">Live Demo</a><span class="px-2">·</span><a href="files/Project_Mendix.pdf" class="link" target="_blank">Thesis</a> </div>
 <!--                <div class="text-sm text-gray-600">(Use student/pass to connect) </div>-->
                 <div class="mt-3 text-gray-700">
-                    <a href="Mendix.html" target="_blank"><button class="sbf px-7 flex py-05 border-b-2 border-gray-200 hover:border-gray-400 focus:border-gray-600"> Read More </button></a>
+                    <a href="projects/Mendix"><button class="sbf px-7 flex py-05 border-b-2 border-gray-200 hover:border-gray-400 focus:border-gray-600"> Read More </button></a>
                 </div>
 
             </div>
             <div class="project-description-column">
                 <div class="project-description">
-                    <p>A task management application built with the Mendix low-code platform and deployed on a cloud environment. The system structures data using domain models, defining entity relationships and associations, while microflows handle process automation, user interactions, and database operations.</p>
-                    <p>Custom UI/UX components were developed using Mendix widgets and layouts, incorporating Kanban boards and calendar views for an intuitive experience. Role-based authentication and access control ensure secure multi-user functionality, supporting both administrator and standard user roles.</p>
+                    <p>A cloud-deployed task management application built with the Mendix low-code platform.</p>
+                    <p>It uses domain models for data structuring, microflows for process automation, and custom UI components like Kanban boards and calendar views.</p>
+                    <p>Role-based authentication ensures secure multi-user access for administrators and standard users.</p>
                 </div>
             </div>
         </div>
@@ -154,13 +160,16 @@
                 <div class="project-title">Web Development Project</div>
                 <div class="project-keywords">JavaScript<span class="px-2">·</span>PHP<span
                         class="px-2">·</span>JQuery<span class="px-2">·</span>Tailwind CSS<span class="px-2">·</span>SQL </div>
-                <div class="project-calltoaction"><a href="https://github.com/alex-xiarchos/ceid-Web/blob/main/Report/out/main.pdf" class="link" target="_blank">Report</a><span class="px-2">·</span><a href="https://github.com/alex-xiarchos/ceid-Web/tree/main/rescuereach" class="link" target="_blank">Source Code</a></div>
+                <div class="project-calltoaction"><a href="files/Project_WebDev_Report.pdf" class="link" target="_blank">Report</a><span class="px-2">·</span><a href="https://github.com/alex-xiarchos/ceid-Web/" class="link" target="_blank">Source Code</a></div>
 <!--                <div class="project-grade">Graded: 9.5/10</div>-->
+                <div class="mt-3 text-gray-700">
+                    <a href="projects/WebDev"><button class="sbf px-7 flex py-05 border-b-2 border-gray-200 hover:border-gray-400 focus:border-gray-600"> Read More </button></a>
+                </div>
             </div>
             <div class="project-description-column">
                 <div class="project-description">
-                    <p>Developed a web‑based disaster management platform enabling citizens to request or offer essential items, with rescuers coordinating pickups and deliveries to and from a central base. </p>
-                    <p>Developed using JavaScript, PHP, jQuery and AJAX for server‑side interactions, with front‑end enhancements utilizing Leaflet for interactive maps, Tailwind CSS for responsive design, sweetalert2 for user popup notifications, and Chart.js for statistic data visualization.</p>
+                    <p>A web-based disaster management platform allowing citizens to request or offer essential items, with rescuers coordinating logistics.</p>
+                    <p>Built using JavaScript, PHP, jQuery, and AJAX for server-side interactions, with front-end features including Leaflet maps, Tailwind CSS, SweetAlert2 notifications, and Chart.js for data visualization.</p>
                 </div>
             </div>
         </div>
